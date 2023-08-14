@@ -1,0 +1,6 @@
+##### NET RECEPTION {'n': 28, 'j': 8, 'r': 62, 's': 3.5, 'img_shape': (3, 224, 224)} #####
+START: 28-10-2022 12:57:44 
+DURATION: 1:37:08.280509 
+Interpretation visualization paper image heatmaps_paper_lbl0 indicies for label 0: [71, 137, 291, 127, 532, 579]
+Interpretation visualization paper image heatmaps_paper_lbl1 indicies for label 1: [1, 0, 5, 9, 7, 8]
+##### ROC TEST SCORE 0.982788296041308 #####

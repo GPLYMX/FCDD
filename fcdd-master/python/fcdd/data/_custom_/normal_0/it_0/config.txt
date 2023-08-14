@@ -1,0 +1,29 @@
+FCDD_CNN224_VGG_F(
+  (features): Sequential(
+    (0): RecConv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): RecMaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): RecConv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): RecMaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (8): RecConv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): RecConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (12): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (13): ReLU(inplace=True)
+    (14): RecMaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (15): RecConv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (16): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (17): ReLU(inplace=True)
+    (18): RecConv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (19): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (20): ReLU(inplace=True)
+  )
+  (conv_final): RecConv2d(512, 1, kernel_size=(1, 1), stride=(1, 1))
+)
+
+{"datadir": "../../data/datasets", "objective": "fcdd", "batch_size": 16, "epochs": 400, "workers": 8, "learning_rate": 0.001, "weight_decay": 1e-06, "optimizer_type": "adam", "scheduler_type": "lambda", "lr_sched_param": [0.985], "load": null, "dataset": "custom", "net": "FCDD_CNN224_VGG_F", "preproc": "aug1", "acc_batches": 8, "bias": true, "cuda": true, "supervise_mode": "other", "noise_mode": "imagenet22k", "oe_limit": Infinity, "online_supervision": true, "nominal_label": 0, "blur_heatmaps": false, "gauss_std": 10, "quantile": 0.97, "resdown": 64, "normal_class": 0, "logdir": "./data/_custom_/normal_0/it_0", "log_start_time": 1666933064, "viz_ids": []}
+

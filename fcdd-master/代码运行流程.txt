@@ -1,0 +1,9 @@
+先1. cd "/data/liumingxuan/AD_model/fcdd-master/python/fcdd/"
+cd到fcdd这个目录
+
+2. export PYTHONPATH="${PYTHONPATH}:/data/liumingxuan/AD_model/fcdd-master/python/"
+ export PYTHONPATH="${PYTHONPATH}:/data/usr/guopeng/fcdd_master/python/"
+设置根目录到python这个文件
+
+3、python runners/run_custom.py --supervise-mode other
+然后运行就好了
