@@ -1,0 +1,14 @@
+2020-2022的异常检测模型我大概都有https://paperswithcode.com/task/anomaly-detection/latest
+异常检测可以分成有监督的和无监督两种
+只用正常数据可以说是无监督，也可以说是半监督，这个定义也挺乱的
+https://github.com/liznerski/fcdd
+然后我们可以统一下数据集划分标准，训练集给500张正常就可以了，因为异常检测模型一般容量不大，而且用太多图片训练也费时间
+
+异常检测大概分成四种类型
+最开始就是类似DCGAN这种用重建模型检测异常，比如ganomaly和f-anogan
+然后出现了一种把深度学习和SVDD结合起来的方法，比如deepSVDD、IGD，还有我刚刚给学长发的fcdd
+然后是基于特征提取器的方法，比如spade，padim，patchcore和cutpaste
+最后是基于知识蒸馏的方法，MKD，STPM和RDAD
+我没事就喜欢上paperwithcode上看最新文章，所以积累的比较多
+
+fcdd在苔色问题上效果非常好
